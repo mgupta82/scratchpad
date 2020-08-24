@@ -16,12 +16,16 @@ class App extends React.Component {
     );
   }
 
+  onSearchSubmit(term) {
+    console.log(term);
+  }
+
   render() {
     return (
       <div>
       <SeasonDisplay lat={this.state.lat}/>
       <hr/>
-      <SearchBar/>
+      <SearchBar onSubmit={this.onSearchSubmit}/>
       </div>
     );
   }
