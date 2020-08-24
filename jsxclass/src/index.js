@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import SeasonDisplay from './SeasonDisplay';
+import SearchBar from './SearchBar';
 
 class App extends React.Component {
   constructor(props) {
@@ -17,7 +18,11 @@ class App extends React.Component {
 
   render() {
     return (
+      <div>
       <SeasonDisplay lat={this.state.lat}/>
+      <hr/>
+      <SearchBar/>
+      </div>
     );
   }
   
