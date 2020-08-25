@@ -19,8 +19,6 @@ const SearchWiki = (props) => {
     })
 
     useEffect(() => {
-        console.log("Searching...");
-
         const wiki = async () => {
             const {data} = await axios.get('https://en.wikipedia.org/w/api.php',{
                 //?action=opensearch&format=json&formatversion=2&search=programming&namespace=0&limit=10
@@ -35,9 +33,20 @@ const SearchWiki = (props) => {
             );
             setResults(data.query.search);
         };
-        if(term) {
-            wiki();
-        }
+
+        const timeoutId = setTimeout(()=>{
+            if(term) {
+                console.log("Searching...");
+                wiki();
+            } else {
+                setResults([]);
+            }
+        }, 500);
+
+        return () => {
+            clearTimeout(timeoutId);
+        };
+
         
     }, [term]) //only fire if  term is changes else recursively will be fired when search results are updated
 
