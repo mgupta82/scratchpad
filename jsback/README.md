@@ -1,5 +1,6 @@
 # JavaScript for Back End (node)
-create project npm init -y
+ 
+npm init -y
 
 run js node index.js
 
