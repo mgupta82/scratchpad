@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #adb195;
+    color: #75480a;
+    font-family: "Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+    font-size: 14px;
+}
+
+#logo {
+    display: block;
+    width: 200px;
+    margin: 40px auto;
+    background: none;
+}
+
+#container {
+    width : 760px;
+    margin: 0 auto;
+    padding: 40px;
+    background: rgba(255, 255, 0, 0.507);
+}
+
+#container:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+#main-content {
+    width: 500px;
+    float:left;
+}
+
+#sidebar {
+    width: 200px;
+    float: left;
+    background: #ebbc7b;
+    padding: 20px 20px 0;
+    margin: 0 0 0 20px;
+}
+
+ul {
+    list-style: none;
+}
+
+a:link {
+    background: #577a1b;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#sidebar h3 {
+    background: rgb(71, 173, 71);
+    padding: 10px 10px 10px 30px;
+    margin: 0 0 5px;
+    color: white;
+    position: relative;
+    left : -30px;
+}
+
+#sidebar .widget {
+    margin : 0 0 20px;
+}
+
+p.lead {
+    font-family: "Avant Garde",Avantgarde,"Century Gothic",CenturyGothic,AppleGothic,sans-serif;
+    font-size: 18px;
+    margin: 0 0 30px;
+}
+
+h1, h2, h3 {
+    font-family: "Arial Rounded MT Bold","Helvetica Rounded",Arial,sans-serif;
+}
+
+#special-offer {
+    background: rgb(238, 85, 85);
+    color: white;
+    padding: 0 20px 20px;
+    margin: 60px 0 0 0; 
+    position: relative; /*for sale*/
+}
+
+#special-offer h2 {
+    font-size: 22px;
+    background: rgb(71, 173, 71);
+    padding: 5px;
+    display:inline;
+    position: relative;
+    top: -15px;
+    left: -30px;
+}
+
+#sale {
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+}
