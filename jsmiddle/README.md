@@ -1,5 +1,2 @@
-# JavaScript based Middleware (express)
-
-npm install express-generator -g
-
-express jsmiddle
+## Set port
+SET PORT=30001
